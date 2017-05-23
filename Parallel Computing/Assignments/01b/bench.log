@@ -1,0 +1,2576 @@
++ for file in 01-original.graph 02-20-nodes-fraction-65.graph 03-20-nodes-fraction-80.graph 04-20-nodes-fraction-89.graph 05-25-nodes-fraction-35.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 seq'
+graphs/01-original.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/01-original.graph
+Execution took 0.0000067 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2864maxresident)k
+0inputs+8outputs (0major+232minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 seq'
+graphs/01-original.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/01-original.graph
+Execution took 0.0000033 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2864maxresident)k
+0inputs+8outputs (0major+232minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 seq'
+graphs/01-original.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/01-original.graph
+Execution took 0.0000032 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2864maxresident)k
+0inputs+8outputs (0major+232minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 seq'
+graphs/01-original.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/01-original.graph
+Execution took 0.0000032 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2864maxresident)k
+0inputs+8outputs (0major+232minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 seq'
+graphs/01-original.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/01-original.graph
+Execution took 0.0000031 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2864maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 1'
+graphs/01-original.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/01-original.graph
+Execution took 0.0000442 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2880maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 1'
+graphs/01-original.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/01-original.graph
+Execution took 0.0000173 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2880maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 1'
+graphs/01-original.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/01-original.graph
+Execution took 0.0000210 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2880maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 1'
+graphs/01-original.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/01-original.graph
+Execution took 0.0000163 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2880maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 1'
+graphs/01-original.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/01-original.graph
+Execution took 0.0000191 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2880maxresident)k
+0inputs+8outputs (0major+233minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 2'
+graphs/01-original.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/01-original.graph
+Execution took 0.0004756 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+239minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 2'
+graphs/01-original.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/01-original.graph
+Execution took 0.0006376 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 2'
+graphs/01-original.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/01-original.graph
+Execution took 0.0003224 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 2'
+graphs/01-original.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/01-original.graph
+Execution took 0.0005007 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+239minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 2'
+graphs/01-original.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/01-original.graph
+Execution took 0.0004663 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+239minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 4'
+graphs/01-original.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/01-original.graph
+Execution took 0.0016243 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 4'
+graphs/01-original.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/01-original.graph
+Execution took 0.0009525 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 4'
+graphs/01-original.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/01-original.graph
+Execution took 0.0008037 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 4'
+graphs/01-original.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/01-original.graph
+Execution took 0.0011052 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 4'
+graphs/01-original.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/01-original.graph
+Execution took 0.0007937 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 8'
+graphs/01-original.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/01-original.graph
+Execution took 0.0023070 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 8'
+graphs/01-original.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/01-original.graph
+Execution took 0.0030126 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 8'
+graphs/01-original.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/01-original.graph
+Execution took 0.0028439 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 80%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+8outputs (0major+255minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 8'
+graphs/01-original.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/01-original.graph
+Execution took 0.0018144 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.14system 0:00.02elapsed 626%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 8'
+graphs/01-original.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/01-original.graph
+Execution took 0.0013378 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 16'
+graphs/01-original.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/01-original.graph
+Execution took 0.0066434 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.24system 0:00.02elapsed 1109%CPU (0avgtext+0avgdata 3520maxresident)k
+0inputs+8outputs (0major+273minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 16'
+graphs/01-original.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/01-original.graph
+Execution took 0.0057436 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 50%CPU (0avgtext+0avgdata 3520maxresident)k
+0inputs+8outputs (0major+273minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 16'
+graphs/01-original.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/01-original.graph
+Execution took 0.0044793 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 57%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 16'
+graphs/01-original.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/01-original.graph
+Execution took 0.0060135 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 88%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 16'
+graphs/01-original.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/01-original.graph
+Execution took 0.0063598 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 1 pal 32'
+graphs/01-original.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/01-original.graph
+Execution took 0.0291534 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.01system 0:00.01elapsed 85%CPU (0avgtext+0avgdata 4112maxresident)k
+0inputs+8outputs (0major+310minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 2 pal 32'
+graphs/01-original.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/01-original.graph
+Execution took 0.0253022 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.04system 0:00.01elapsed 307%CPU (0avgtext+0avgdata 4112maxresident)k
+0inputs+8outputs (0major+310minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 3 pal 32'
+graphs/01-original.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/01-original.graph
+Execution took 0.0259639 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.02system 0:00.01elapsed 142%CPU (0avgtext+0avgdata 4128maxresident)k
+0inputs+8outputs (0major+311minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 4 pal 32'
+graphs/01-original.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/01-original.graph
+Execution took 0.0247044 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.30system 0:00.02elapsed 1339%CPU (0avgtext+0avgdata 4128maxresident)k
+0inputs+8outputs (0major+311minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/01-original.graph run 5 pal 32'
+graphs/01-original.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/01-original.graph
+Execution took 0.0248356 seconds
+The shortest path has length 15 with the path 0->3->1->2->0
+0.00user 0.02system 0:00.01elapsed 184%CPU (0avgtext+0avgdata 4128maxresident)k
+0inputs+8outputs (0major+311minor)pagefaults 0swaps
++ for file in 01-original.graph 02-20-nodes-fraction-65.graph 03-20-nodes-fraction-80.graph 04-20-nodes-fraction-89.graph 05-25-nodes-fraction-35.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 seq'
+graphs/02-20-nodes-fraction-65.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/02-20-nodes-fraction-65.graph
+Execution took 165.0470497 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+165.04user 0.00system 2:45.05elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 seq'
+graphs/02-20-nodes-fraction-65.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/02-20-nodes-fraction-65.graph
+Execution took 166.0584235 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+166.06user 0.00system 2:46.06elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 seq'
+graphs/02-20-nodes-fraction-65.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/02-20-nodes-fraction-65.graph
+Execution took 166.2895616 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+166.29user 0.00system 2:46.29elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 seq'
+graphs/02-20-nodes-fraction-65.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/02-20-nodes-fraction-65.graph
+Execution took 166.2085385 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+166.21user 0.00system 2:46.21elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+16outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 seq'
+graphs/02-20-nodes-fraction-65.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/02-20-nodes-fraction-65.graph
+Execution took 166.3431558 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+166.35user 0.00system 2:46.34elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 1'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/02-20-nodes-fraction-65.graph
+Execution took 219.6387380 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+219.64user 0.00system 3:39.64elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 1'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/02-20-nodes-fraction-65.graph
+Execution took 216.7466941 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+216.73user 0.02system 3:36.75elapsed 100%CPU (0avgtext+0avgdata 3072maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 1'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/02-20-nodes-fraction-65.graph
+Execution took 217.4774253 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+217.48user 0.00system 3:37.48elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 1'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/02-20-nodes-fraction-65.graph
+Execution took 218.1948723 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+218.20user 0.00system 3:38.19elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 1'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/02-20-nodes-fraction-65.graph
+Execution took 220.9482506 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+220.90user 0.04system 3:40.95elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 2'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/02-20-nodes-fraction-65.graph
+Execution took 135.2483937 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+261.66user 0.00system 2:15.25elapsed 193%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 2'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/02-20-nodes-fraction-65.graph
+Execution took 135.3451110 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+262.71user 0.00system 2:15.34elapsed 194%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+16outputs (0major+260minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 2'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/02-20-nodes-fraction-65.graph
+Execution took 134.9403550 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+259.14user 0.00system 2:14.94elapsed 192%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 2'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/02-20-nodes-fraction-65.graph
+Execution took 134.5598887 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+260.99user 0.02system 2:14.56elapsed 193%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 2'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/02-20-nodes-fraction-65.graph
+Execution took 135.1244243 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+262.07user 0.00system 2:15.12elapsed 193%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 4'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/02-20-nodes-fraction-65.graph
+Execution took 61.5268554 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+191.18user 0.02system 1:01.52elapsed 310%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 4'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/02-20-nodes-fraction-65.graph
+Execution took 54.0782230 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+178.62user 0.03system 0:54.08elapsed 330%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 4'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/02-20-nodes-fraction-65.graph
+Execution took 57.9279264 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+175.44user 0.02system 0:57.92elapsed 302%CPU (0avgtext+0avgdata 3680maxresident)k
+0inputs+8outputs (0major+283minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 4'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/02-20-nodes-fraction-65.graph
+Execution took 54.0906942 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+176.23user 0.03system 0:54.10elapsed 325%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 4'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/02-20-nodes-fraction-65.graph
+Execution took 57.6920722 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+174.43user 0.03system 0:57.69elapsed 302%CPU (0avgtext+0avgdata 3664maxresident)k
+0inputs+16outputs (0major+282minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 8'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/02-20-nodes-fraction-65.graph
+Execution took 45.7132240 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+215.08user 0.04system 0:45.70elapsed 470%CPU (0avgtext+0avgdata 4368maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 8'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/02-20-nodes-fraction-65.graph
+Execution took 47.0497482 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+236.72user 0.01system 0:47.05elapsed 503%CPU (0avgtext+0avgdata 4384maxresident)k
+0inputs+8outputs (0major+328minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 8'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/02-20-nodes-fraction-65.graph
+Execution took 45.6077630 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+215.09user 0.02system 0:45.60elapsed 471%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 8'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/02-20-nodes-fraction-65.graph
+Execution took 44.1074924 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+213.71user 0.04system 0:44.10elapsed 484%CPU (0avgtext+0avgdata 4368maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 8'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/02-20-nodes-fraction-65.graph
+Execution took 44.4367372 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+208.64user 0.04system 0:44.43elapsed 469%CPU (0avgtext+0avgdata 4368maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 16'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.2708134 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+270.33user 0.11system 0:43.25elapsed 625%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 16'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.8877916 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+240.24user 0.09system 0:43.86elapsed 547%CPU (0avgtext+0avgdata 5776maxresident)k
+0inputs+8outputs (0major+414minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 16'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.0937280 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+257.39user 0.06system 0:43.06elapsed 597%CPU (0avgtext+0avgdata 5744maxresident)k
+0inputs+16outputs (0major+412minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 16'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.3985049 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+254.97user 0.03system 0:43.37elapsed 587%CPU (0avgtext+0avgdata 5776maxresident)k
+0inputs+8outputs (0major+414minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 16'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.1989513 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+239.37user 0.06system 0:43.17elapsed 554%CPU (0avgtext+0avgdata 5744maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 1 pal 32'
+graphs/02-20-nodes-fraction-65.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.1761511 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+295.99user 0.16system 0:43.03elapsed 688%CPU (0avgtext+0avgdata 8560maxresident)k
+0inputs+8outputs (0major+588minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 2 pal 32'
+graphs/02-20-nodes-fraction-65.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.4269179 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+296.33user 0.11system 0:43.28elapsed 684%CPU (0avgtext+0avgdata 8560maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 3 pal 32'
+graphs/02-20-nodes-fraction-65.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.3475067 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+264.63user 0.18system 0:43.25elapsed 612%CPU (0avgtext+0avgdata 8560maxresident)k
+0inputs+8outputs (0major+588minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 4 pal 32'
+graphs/02-20-nodes-fraction-65.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.4615181 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+269.38user 0.04system 0:43.33elapsed 621%CPU (0avgtext+0avgdata 8560maxresident)k
+0inputs+8outputs (0major+588minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/02-20-nodes-fraction-65.graph run 5 pal 32'
+graphs/02-20-nodes-fraction-65.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/02-20-nodes-fraction-65.graph
+Execution took 43.1184239 seconds
+The shortest path has length 352 with the path 0->13->16->7->17->10->15->18->14->5->11->1->9->8->12->3->2->19->4->6->0
+271.47user 0.02system 0:42.99elapsed 631%CPU (0avgtext+0avgdata 8576maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for file in 01-original.graph 02-20-nodes-fraction-65.graph 03-20-nodes-fraction-80.graph 04-20-nodes-fraction-89.graph 05-25-nodes-fraction-35.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 seq'
+graphs/03-20-nodes-fraction-80.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/03-20-nodes-fraction-80.graph
+Execution took 178.6192707 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+178.62user 0.00system 2:58.62elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+16outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 seq'
+graphs/03-20-nodes-fraction-80.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/03-20-nodes-fraction-80.graph
+Execution took 177.9749880 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+177.97user 0.00system 2:57.97elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+243minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 seq'
+graphs/03-20-nodes-fraction-80.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/03-20-nodes-fraction-80.graph
+Execution took 178.4168138 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+178.41user 0.01system 2:58.42elapsed 100%CPU (0avgtext+0avgdata 3040maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 seq'
+graphs/03-20-nodes-fraction-80.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/03-20-nodes-fraction-80.graph
+Execution took 178.5798456 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+178.58user 0.00system 2:58.58elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 seq'
+graphs/03-20-nodes-fraction-80.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/03-20-nodes-fraction-80.graph
+Execution took 178.1452110 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+178.15user 0.00system 2:58.14elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 1'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/03-20-nodes-fraction-80.graph
+Execution took 442.6862869 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+442.70user 0.00system 7:22.69elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 1'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/03-20-nodes-fraction-80.graph
+Execution took 435.3216630 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+435.32user 0.01system 7:15.32elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 1'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/03-20-nodes-fraction-80.graph
+Execution took 433.7205853 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+433.72user 0.01system 7:13.72elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 1'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/03-20-nodes-fraction-80.graph
+Execution took 436.3049722 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+436.29user 0.02system 7:16.30elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+16outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 1'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/03-20-nodes-fraction-80.graph
+Execution took 433.5975065 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+433.60user 0.01system 7:13.60elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+245minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 2'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/03-20-nodes-fraction-80.graph
+Execution took 290.8249878 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+518.64user 0.00system 4:50.82elapsed 178%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 2'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/03-20-nodes-fraction-80.graph
+Execution took 269.5772014 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+491.39user 0.02system 4:29.58elapsed 182%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+260minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 2'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/03-20-nodes-fraction-80.graph
+Execution took 291.6902027 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+520.81user 0.05system 4:51.69elapsed 178%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 2'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/03-20-nodes-fraction-80.graph
+Execution took 270.6141280 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+493.52user 0.54system 4:30.61elapsed 182%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+260minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 2'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/03-20-nodes-fraction-80.graph
+Execution took 284.5995854 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+503.90user 0.02system 4:44.60elapsed 177%CPU (0avgtext+0avgdata 3280maxresident)k
+0inputs+8outputs (0major+258minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 4'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/03-20-nodes-fraction-80.graph
+Execution took 171.5148105 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+514.04user 0.04system 2:51.51elapsed 299%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 4'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/03-20-nodes-fraction-80.graph
+Execution took 196.4731596 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+612.63user 0.09system 3:16.47elapsed 311%CPU (0avgtext+0avgdata 3680maxresident)k
+0inputs+16outputs (0major+283minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 4'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/03-20-nodes-fraction-80.graph
+Execution took 172.2762028 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+515.62user 0.06system 2:52.27elapsed 299%CPU (0avgtext+0avgdata 3664maxresident)k
+0inputs+8outputs (0major+282minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 4'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/03-20-nodes-fraction-80.graph
+Execution took 171.6593511 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+515.68user 0.05system 2:51.66elapsed 300%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 4'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/03-20-nodes-fraction-80.graph
+Execution took 172.0199166 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+518.38user 0.06system 2:52.02elapsed 301%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+281minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 8'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/03-20-nodes-fraction-80.graph
+Execution took 111.5487130 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+485.65user 0.00system 1:51.54elapsed 435%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 8'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/03-20-nodes-fraction-80.graph
+Execution took 112.6582208 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+514.90user 0.06system 1:52.66elapsed 457%CPU (0avgtext+0avgdata 4368maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 8'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/03-20-nodes-fraction-80.graph
+Execution took 112.6215500 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+515.70user 0.02system 1:52.61elapsed 457%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+8outputs (0major+325minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 8'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/03-20-nodes-fraction-80.graph
+Execution took 114.9612365 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+528.20user 0.02system 1:54.95elapsed 459%CPU (0avgtext+0avgdata 4368maxresident)k
+0inputs+8outputs (0major+326minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 8'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/03-20-nodes-fraction-80.graph
+Execution took 113.1284933 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+516.15user 0.01system 1:53.12elapsed 456%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+16outputs (0major+325minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 16'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.0251884 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+558.90user 0.10system 1:24.01elapsed 665%CPU (0avgtext+0avgdata 5728maxresident)k
+0inputs+8outputs (0major+411minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 16'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/03-20-nodes-fraction-80.graph
+Execution took 83.8350549 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+555.99user 0.09system 1:23.81elapsed 663%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 16'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.1597539 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+552.56user 0.07system 1:24.13elapsed 656%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 16'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.1321647 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+556.35user 0.07system 1:24.10elapsed 661%CPU (0avgtext+0avgdata 5744maxresident)k
+0inputs+8outputs (0major+412minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 16'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/03-20-nodes-fraction-80.graph
+Execution took 79.4064187 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+553.89user 0.01system 1:19.37elapsed 697%CPU (0avgtext+0avgdata 5776maxresident)k
+0inputs+8outputs (0major+414minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 1 pal 32'
+graphs/03-20-nodes-fraction-80.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.1803242 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+588.60user 0.17system 1:24.07elapsed 700%CPU (0avgtext+0avgdata 8544maxresident)k
+0inputs+8outputs (0major+587minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 2 pal 32'
+graphs/03-20-nodes-fraction-80.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.0847881 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+593.63user 0.11system 1:23.93elapsed 707%CPU (0avgtext+0avgdata 8576maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 3 pal 32'
+graphs/03-20-nodes-fraction-80.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/03-20-nodes-fraction-80.graph
+Execution took 110.7453131 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+683.19user 0.12system 1:50.58elapsed 617%CPU (0avgtext+0avgdata 8592maxresident)k
+0inputs+16outputs (0major+590minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 4 pal 32'
+graphs/03-20-nodes-fraction-80.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/03-20-nodes-fraction-80.graph
+Execution took 77.7913779 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+594.08user 0.10system 1:17.67elapsed 764%CPU (0avgtext+0avgdata 8576maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/03-20-nodes-fraction-80.graph run 5 pal 32'
+graphs/03-20-nodes-fraction-80.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/03-20-nodes-fraction-80.graph
+Execution took 84.0415523 seconds
+The shortest path has length 300 with the path 0->17->16->4->5->8->15->13->18->9->6->1->11->7->3->12->19->14->10->2->0
+592.47user 0.14system 1:23.94elapsed 705%CPU (0avgtext+0avgdata 8528maxresident)k
+0inputs+8outputs (0major+586minor)pagefaults 0swaps
++ for file in 01-original.graph 02-20-nodes-fraction-65.graph 03-20-nodes-fraction-80.graph 04-20-nodes-fraction-89.graph 05-25-nodes-fraction-35.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 seq'
+graphs/04-20-nodes-fraction-89.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/04-20-nodes-fraction-89.graph
+Execution took 187.5008434 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+187.50user 0.00system 3:07.50elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 seq'
+graphs/04-20-nodes-fraction-89.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/04-20-nodes-fraction-89.graph
+Execution took 187.4978988 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+187.50user 0.00system 3:07.50elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 seq'
+graphs/04-20-nodes-fraction-89.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/04-20-nodes-fraction-89.graph
+Execution took 186.5895472 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+186.59user 0.00system 3:06.59elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+243minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 seq'
+graphs/04-20-nodes-fraction-89.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/04-20-nodes-fraction-89.graph
+Execution took 186.8148521 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+186.82user 0.00system 3:06.81elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 seq'
+graphs/04-20-nodes-fraction-89.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/04-20-nodes-fraction-89.graph
+Execution took 187.2334796 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+187.24user 0.00system 3:07.24elapsed 100%CPU (0avgtext+0avgdata 3024maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 1'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/04-20-nodes-fraction-89.graph
+Execution took 310.7074471 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+310.72user 0.00system 5:10.71elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+16outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 1'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/04-20-nodes-fraction-89.graph
+Execution took 311.5089179 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+311.51user 0.00system 5:11.51elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 1'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/04-20-nodes-fraction-89.graph
+Execution took 311.2519353 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+311.25user 0.00system 5:11.25elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 1'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/04-20-nodes-fraction-89.graph
+Execution took 311.9010404 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+311.91user 0.00system 5:11.90elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 1'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/04-20-nodes-fraction-89.graph
+Execution took 311.0071452 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+311.01user 0.00system 5:11.01elapsed 100%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+8outputs (0major+244minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 2'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/04-20-nodes-fraction-89.graph
+Execution took 252.6225997 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+504.99user 0.06system 4:12.63elapsed 199%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 2'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/04-20-nodes-fraction-89.graph
+Execution took 252.8036024 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+505.56user 0.06system 4:12.81elapsed 200%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 2'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/04-20-nodes-fraction-89.graph
+Execution took 244.7027154 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+489.14user 0.04system 4:04.70elapsed 199%CPU (0avgtext+0avgdata 3280maxresident)k
+0inputs+8outputs (0major+258minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 2'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/04-20-nodes-fraction-89.graph
+Execution took 242.8394800 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+485.27user 0.04system 4:02.84elapsed 199%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+16outputs (0major+259minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 2'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/04-20-nodes-fraction-89.graph
+Execution took 249.3765741 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+498.46user 0.06system 4:09.38elapsed 199%CPU (0avgtext+0avgdata 3296maxresident)k
+0inputs+8outputs (0major+259minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 4'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/04-20-nodes-fraction-89.graph
+Execution took 109.1126818 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+393.12user 0.08system 1:49.11elapsed 360%CPU (0avgtext+0avgdata 3632maxresident)k
+0inputs+8outputs (0major+280minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 4'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/04-20-nodes-fraction-89.graph
+Execution took 94.0282345 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+352.79user 0.01system 1:34.03elapsed 375%CPU (0avgtext+0avgdata 3664maxresident)k
+0inputs+8outputs (0major+282minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 4'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/04-20-nodes-fraction-89.graph
+Execution took 109.3309203 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+393.86user 0.02system 1:49.33elapsed 360%CPU (0avgtext+0avgdata 3664maxresident)k
+0inputs+8outputs (0major+283minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 4'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/04-20-nodes-fraction-89.graph
+Execution took 128.6744087 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+428.12user 0.04system 2:08.67elapsed 332%CPU (0avgtext+0avgdata 3680maxresident)k
+0inputs+8outputs (0major+284minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 4'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/04-20-nodes-fraction-89.graph
+Execution took 94.6963253 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+361.23user 0.03system 1:34.70elapsed 381%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+8outputs (0major+282minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 8'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/04-20-nodes-fraction-89.graph
+Execution took 54.8689238 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+336.84user 0.04system 0:54.86elapsed 613%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+8outputs (0major+325minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 8'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/04-20-nodes-fraction-89.graph
+Execution took 55.8298604 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+342.58user 0.02system 0:55.82elapsed 613%CPU (0avgtext+0avgdata 4384maxresident)k
+0inputs+16outputs (0major+327minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 8'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/04-20-nodes-fraction-89.graph
+Execution took 56.7455263 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+346.87user 0.01system 0:56.74elapsed 611%CPU (0avgtext+0avgdata 4384maxresident)k
+0inputs+8outputs (0major+328minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 8'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/04-20-nodes-fraction-89.graph
+Execution took 57.5800448 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+343.87user 0.05system 0:57.57elapsed 597%CPU (0avgtext+0avgdata 4352maxresident)k
+0inputs+8outputs (0major+325minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 8'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/04-20-nodes-fraction-89.graph
+Execution took 55.0038926 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+344.19user 0.01system 0:55.00elapsed 625%CPU (0avgtext+0avgdata 4384maxresident)k
+0inputs+8outputs (0major+327minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 16'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/04-20-nodes-fraction-89.graph
+Execution took 39.5828192 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+402.21user 0.02system 0:39.56elapsed 1016%CPU (0avgtext+0avgdata 5776maxresident)k
+0inputs+8outputs (0major+414minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 16'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/04-20-nodes-fraction-89.graph
+Execution took 39.6091822 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+400.27user 0.09system 0:39.59elapsed 1011%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 16'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/04-20-nodes-fraction-89.graph
+Execution took 39.8328362 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+416.63user 0.08system 0:39.80elapsed 1046%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 16'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/04-20-nodes-fraction-89.graph
+Execution took 40.3484404 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+451.27user 0.08system 0:40.32elapsed 1119%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+8outputs (0major+413minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 16'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/04-20-nodes-fraction-89.graph
+Execution took 39.6606238 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+416.12user 0.03system 0:39.63elapsed 1050%CPU (0avgtext+0avgdata 5760maxresident)k
+0inputs+16outputs (0major+414minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 1 pal 32'
+graphs/04-20-nodes-fraction-89.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/04-20-nodes-fraction-89.graph
+Execution took 46.1692341 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+494.89user 0.02system 0:46.03elapsed 1075%CPU (0avgtext+0avgdata 8576maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 2 pal 32'
+graphs/04-20-nodes-fraction-89.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/04-20-nodes-fraction-89.graph
+Execution took 57.8754905 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+505.01user 0.11system 0:57.73elapsed 874%CPU (0avgtext+0avgdata 8544maxresident)k
+0inputs+8outputs (0major+587minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 3 pal 32'
+graphs/04-20-nodes-fraction-89.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/04-20-nodes-fraction-89.graph
+Execution took 45.8538327 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+495.07user 0.17system 0:45.73elapsed 1082%CPU (0avgtext+0avgdata 8560maxresident)k
+0inputs+8outputs (0major+588minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 4 pal 32'
+graphs/04-20-nodes-fraction-89.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/04-20-nodes-fraction-89.graph
+Execution took 60.0947653 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+506.80user 0.04system 0:59.99elapsed 844%CPU (0avgtext+0avgdata 8544maxresident)k
+0inputs+8outputs (0major+587minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/04-20-nodes-fraction-89.graph run 5 pal 32'
+graphs/04-20-nodes-fraction-89.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/04-20-nodes-fraction-89.graph
+Execution took 46.2052080 seconds
+The shortest path has length 236 with the path 0->7->2->4->19->1->6->8->10->15->9->14->16->18->3->11->17->13->5->12->0
+506.11user 0.08system 0:46.10elapsed 1097%CPU (0avgtext+0avgdata 8576maxresident)k
+0inputs+8outputs (0major+589minor)pagefaults 0swaps
++ for file in 01-original.graph 02-20-nodes-fraction-65.graph 03-20-nodes-fraction-80.graph 04-20-nodes-fraction-89.graph 05-25-nodes-fraction-35.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 seq'
+graphs/05-25-nodes-fraction-35.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/05-25-nodes-fraction-35.graph
+Execution took 536.6885724 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+536.70user 0.00system 8:56.69elapsed 100%CPU (0avgtext+0avgdata 3136maxresident)k
+0inputs+8outputs (0major+249minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 seq'
+graphs/05-25-nodes-fraction-35.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/05-25-nodes-fraction-35.graph
+Execution took 537.1515972 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+537.17user 0.00system 8:57.15elapsed 100%CPU (0avgtext+0avgdata 3136maxresident)k
+0inputs+8outputs (0major+250minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 seq'
+graphs/05-25-nodes-fraction-35.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/05-25-nodes-fraction-35.graph
+Execution took 538.3577652 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+538.38user 0.00system 8:58.36elapsed 100%CPU (0avgtext+0avgdata 3136maxresident)k
+0inputs+8outputs (0major+249minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 seq'
+graphs/05-25-nodes-fraction-35.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/05-25-nodes-fraction-35.graph
+Execution took 541.0402892 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+541.06user 0.00system 9:01.04elapsed 100%CPU (0avgtext+0avgdata 3136maxresident)k
+0inputs+8outputs (0major+250minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 seq'
+graphs/05-25-nodes-fraction-35.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/05-25-nodes-fraction-35.graph
+Execution took 539.0894079 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+539.08user 0.02system 8:59.09elapsed 100%CPU (0avgtext+0avgdata 3120maxresident)k
+0inputs+8outputs (0major+248minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 1'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/05-25-nodes-fraction-35.graph
+Execution took 1149.3184849 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1149.34user 0.02system 19:09.32elapsed 100%CPU (0avgtext+0avgdata 3184maxresident)k
+0inputs+8outputs (0major+252minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 1'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/05-25-nodes-fraction-35.graph
+Execution took 1150.0716612 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1150.03user 0.08system 19:10.07elapsed 100%CPU (0avgtext+0avgdata 3184maxresident)k
+0inputs+8outputs (0major+252minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 1'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/05-25-nodes-fraction-35.graph
+Execution took 1150.8749220 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1150.88user 0.03system 19:10.88elapsed 100%CPU (0avgtext+0avgdata 3184maxresident)k
+0inputs+8outputs (0major+252minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 1'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/05-25-nodes-fraction-35.graph
+Execution took 1152.5734690 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1152.56user 0.05system 19:12.57elapsed 100%CPU (0avgtext+0avgdata 3184maxresident)k
+0inputs+8outputs (0major+252minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 1'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/05-25-nodes-fraction-35.graph
+Execution took 1146.9732866 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1146.91user 0.10system 19:06.97elapsed 100%CPU (0avgtext+0avgdata 3184maxresident)k
+0inputs+8outputs (0major+252minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 2'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/05-25-nodes-fraction-35.graph
+Execution took 705.2597824 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1391.51user 0.11system 11:45.26elapsed 197%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+8outputs (0major+275minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 2'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/05-25-nodes-fraction-35.graph
+Execution took 707.6374421 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1394.58user 0.02system 11:47.64elapsed 197%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+8outputs (0major+274minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 2'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/05-25-nodes-fraction-35.graph
+Execution took 701.9227068 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1387.89user 0.00system 11:41.92elapsed 197%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+8outputs (0major+274minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 2'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/05-25-nodes-fraction-35.graph
+Execution took 702.9807156 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1386.36user 0.05system 11:42.98elapsed 197%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+8outputs (0major+274minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 2'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/05-25-nodes-fraction-35.graph
+Execution took 721.2993505 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1416.71user 0.00system 12:01.30elapsed 196%CPU (0avgtext+0avgdata 3536maxresident)k
+0inputs+8outputs (0major+274minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 4'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/05-25-nodes-fraction-35.graph
+Execution took 279.1696904 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+985.35user 0.11system 4:39.17elapsed 352%CPU (0avgtext+0avgdata 4144maxresident)k
+0inputs+8outputs (0major+313minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 4'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/05-25-nodes-fraction-35.graph
+Execution took 279.3766633 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+983.34user 0.08system 4:39.37elapsed 352%CPU (0avgtext+0avgdata 4144maxresident)k
+0inputs+8outputs (0major+312minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 4'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/05-25-nodes-fraction-35.graph
+Execution took 279.6858454 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+982.66user 0.08system 4:39.68elapsed 351%CPU (0avgtext+0avgdata 4144maxresident)k
+0inputs+8outputs (0major+312minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 4'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/05-25-nodes-fraction-35.graph
+Execution took 280.1204182 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+982.92user 0.08system 4:40.12elapsed 350%CPU (0avgtext+0avgdata 4160maxresident)k
+0inputs+8outputs (0major+313minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 4'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/05-25-nodes-fraction-35.graph
+Execution took 279.3994990 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+983.51user 0.08system 4:39.40elapsed 352%CPU (0avgtext+0avgdata 4128maxresident)k
+0inputs+8outputs (0major+311minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 8'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/05-25-nodes-fraction-35.graph
+Execution took 394.8986995 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1212.57user 0.10system 6:34.89elapsed 307%CPU (0avgtext+0avgdata 5312maxresident)k
+0inputs+8outputs (0major+385minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 8'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/05-25-nodes-fraction-35.graph
+Execution took 394.5311968 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1234.50user 0.08system 6:34.52elapsed 312%CPU (0avgtext+0avgdata 5344maxresident)k
+0inputs+8outputs (0major+387minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 8'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/05-25-nodes-fraction-35.graph
+Execution took 396.2527555 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1242.86user 0.17system 6:36.24elapsed 313%CPU (0avgtext+0avgdata 5312maxresident)k
+0inputs+8outputs (0major+385minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 8'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/05-25-nodes-fraction-35.graph
+Execution took 395.6333494 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1238.11user 0.04system 6:35.62elapsed 312%CPU (0avgtext+0avgdata 5312maxresident)k
+0inputs+8outputs (0major+385minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 8'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/05-25-nodes-fraction-35.graph
+Execution took 394.6717498 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1242.57user 0.16system 6:34.67elapsed 314%CPU (0avgtext+0avgdata 5312maxresident)k
+0inputs+8outputs (0major+385minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 16'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/05-25-nodes-fraction-35.graph
+Execution took 432.1284906 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1499.04user 0.08system 7:12.07elapsed 346%CPU (0avgtext+0avgdata 7680maxresident)k
+0inputs+16outputs (0major+533minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 16'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/05-25-nodes-fraction-35.graph
+Execution took 228.3450825 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1276.66user 0.11system 3:48.31elapsed 559%CPU (0avgtext+0avgdata 7648maxresident)k
+0inputs+8outputs (0major+531minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 16'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/05-25-nodes-fraction-35.graph
+Execution took 229.5127814 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1262.74user 0.11system 3:49.45elapsed 550%CPU (0avgtext+0avgdata 7648maxresident)k
+0inputs+8outputs (0major+531minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 16'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/05-25-nodes-fraction-35.graph
+Execution took 228.6237068 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1272.74user 0.06system 3:48.58elapsed 556%CPU (0avgtext+0avgdata 7664maxresident)k
+0inputs+8outputs (0major+532minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 16'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/05-25-nodes-fraction-35.graph
+Execution took 229.6710059 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1293.67user 0.13system 3:49.61elapsed 563%CPU (0avgtext+0avgdata 7680maxresident)k
+0inputs+8outputs (0major+533minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 1 pal 32'
+graphs/05-25-nodes-fraction-35.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/05-25-nodes-fraction-35.graph
+Execution took 291.0595651 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1425.48user 0.21system 4:50.70elapsed 490%CPU (0avgtext+0avgdata 12384maxresident)k
+0inputs+8outputs (0major+827minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 2 pal 32'
+graphs/05-25-nodes-fraction-35.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/05-25-nodes-fraction-35.graph
+Execution took 383.5389100 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1438.75user 0.19system 6:23.20elapsed 375%CPU (0avgtext+0avgdata 12368maxresident)k
+0inputs+8outputs (0major+826minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 3 pal 32'
+graphs/05-25-nodes-fraction-35.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/05-25-nodes-fraction-35.graph
+Execution took 374.1499327 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1377.33user 0.23system 6:13.85elapsed 368%CPU (0avgtext+0avgdata 12368maxresident)k
+0inputs+8outputs (0major+826minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 4 pal 32'
+graphs/05-25-nodes-fraction-35.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/05-25-nodes-fraction-35.graph
+Execution took 208.2903846 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1215.04user 0.29system 3:27.95elapsed 584%CPU (0avgtext+0avgdata 12352maxresident)k
+0inputs+8outputs (0major+825minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/05-25-nodes-fraction-35.graph run 5 pal 32'
+graphs/05-25-nodes-fraction-35.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/05-25-nodes-fraction-35.graph
+Execution took 372.7318104 seconds
+The shortest path has length 457 with the path 0->13->1->20->10->9->6->11->15->18->8->24->22->2->12->3->4->17->16->7->14->21->19->5->23->0
+1458.81user 0.04system 6:12.38elapsed 391%CPU (0avgtext+0avgdata 12384maxresident)k
+0inputs+8outputs (0major+827minor)pagefaults 0swaps
++ for file in 06-18-nodes-fraction-100.graph 07-18-nodes-fraction-100.graph 08-18-nodes-fraction-90.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 seq'
+graphs/06-18-nodes-fraction-100.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/06-18-nodes-fraction-100.graph
+Execution took 82.9814660 seconds
+The shortest path has length 210 with the path 0->14->5->17->16->3->13->4->6->2->10->9->12->11->15->7->8->1->0
+82.98user 0.00system 1:22.98elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 seq'
+graphs/06-18-nodes-fraction-100.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/06-18-nodes-fraction-100.graph
+Execution took 83.4326395 seconds
+The shortest path has length 210 with the path 0->14->5->17->16->3->13->4->6->2->10->9->12->11->15->7->8->1->0
+83.43user 0.00system 1:23.43elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 seq'
+graphs/06-18-nodes-fraction-100.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/06-18-nodes-fraction-100.graph
+Execution took 83.4785255 seconds
+The shortest path has length 210 with the path 0->14->5->17->16->3->13->4->6->2->10->9->12->11->15->7->8->1->0
+83.47user 0.00system 1:23.48elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 seq'
+graphs/06-18-nodes-fraction-100.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/06-18-nodes-fraction-100.graph
+Execution took 85.4081554 seconds
+The shortest path has length 210 with the path 0->14->5->17->16->3->13->4->6->2->10->9->12->11->15->7->8->1->0
+85.41user 0.00system 1:25.41elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 seq'
+graphs/06-18-nodes-fraction-100.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/06-18-nodes-fraction-100.graph
+Execution took 83.3366606 seconds
+The shortest path has length 210 with the path 0->14->5->17->16->3->13->4->6->2->10->9->12->11->15->7->8->1->0
+83.33user 0.00system 1:23.34elapsed 100%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 1'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/06-18-nodes-fraction-100.graph
+Execution took 131.5834233 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+131.58user 0.00system 2:11.58elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 1'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/06-18-nodes-fraction-100.graph
+Execution took 130.8889550 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+130.89user 0.00system 2:10.89elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 1'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/06-18-nodes-fraction-100.graph
+Execution took 130.9472364 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+130.94user 0.01system 2:10.95elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 1'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/06-18-nodes-fraction-100.graph
+Execution took 131.0798773 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+131.08user 0.00system 2:11.08elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 1'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/06-18-nodes-fraction-100.graph
+Execution took 131.3239811 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+131.28user 0.04system 2:11.32elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 2'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/06-18-nodes-fraction-100.graph
+Execution took 60.7204398 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+118.14user 0.02system 1:00.72elapsed 194%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+254minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 2'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/06-18-nodes-fraction-100.graph
+Execution took 60.5142700 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+117.88user 0.05system 1:00.51elapsed 194%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 2'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/06-18-nodes-fraction-100.graph
+Execution took 82.8148377 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+163.36user 0.00system 1:22.81elapsed 197%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+8outputs (0major+254minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 2'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/06-18-nodes-fraction-100.graph
+Execution took 60.5773975 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+117.90user 0.00system 1:00.58elapsed 194%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 2'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/06-18-nodes-fraction-100.graph
+Execution took 60.7309254 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+118.20user 0.00system 1:00.73elapsed 194%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+254minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 4'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/06-18-nodes-fraction-100.graph
+Execution took 38.5102814 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+134.24user 0.01system 0:38.51elapsed 348%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 4'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/06-18-nodes-fraction-100.graph
+Execution took 40.2863499 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+135.35user 0.00system 0:40.28elapsed 335%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 4'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/06-18-nodes-fraction-100.graph
+Execution took 38.7154120 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+134.49user 0.04system 0:38.71elapsed 347%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+273minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 4'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/06-18-nodes-fraction-100.graph
+Execution took 40.3539379 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+135.15user 0.08system 0:40.36elapsed 334%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 4'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/06-18-nodes-fraction-100.graph
+Execution took 39.5578062 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+134.51user 0.02system 0:39.55elapsed 340%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 8'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/06-18-nodes-fraction-100.graph
+Execution took 26.1350059 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+158.04user 0.01system 0:26.12elapsed 604%CPU (0avgtext+0avgdata 4064maxresident)k
+0inputs+8outputs (0major+308minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 8'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/06-18-nodes-fraction-100.graph
+Execution took 23.3899434 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+142.14user 0.03system 0:23.38elapsed 608%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 8'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/06-18-nodes-fraction-100.graph
+Execution took 23.7947335 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+144.72user 0.01system 0:23.79elapsed 608%CPU (0avgtext+0avgdata 4096maxresident)k
+0inputs+8outputs (0major+309minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 8'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/06-18-nodes-fraction-100.graph
+Execution took 24.0839374 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+143.99user 0.00system 0:24.07elapsed 598%CPU (0avgtext+0avgdata 4064maxresident)k
+0inputs+8outputs (0major+307minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 8'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/06-18-nodes-fraction-100.graph
+Execution took 27.3246006 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+161.81user 0.01system 0:27.32elapsed 592%CPU (0avgtext+0avgdata 4096maxresident)k
+0inputs+8outputs (0major+309minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 16'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.7878939 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+138.23user 0.09system 0:16.77elapsed 824%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+376minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 16'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.7592263 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+149.20user 0.07system 0:16.74elapsed 891%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+376minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 16'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.7417393 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+144.06user 0.06system 0:16.72elapsed 861%CPU (0avgtext+0avgdata 5184maxresident)k
+0inputs+8outputs (0major+377minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 16'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.8518117 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+133.44user 0.06system 0:16.82elapsed 793%CPU (0avgtext+0avgdata 5168maxresident)k
+0inputs+8outputs (0major+376minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 16'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.7644916 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+135.87user 0.07system 0:16.74elapsed 812%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 1 pal 32'
+graphs/06-18-nodes-fraction-100.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.7889656 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+160.93user 0.24system 0:16.73elapsed 963%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 2 pal 32'
+graphs/06-18-nodes-fraction-100.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.9266630 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+159.62user 0.18system 0:16.84elapsed 948%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 3 pal 32'
+graphs/06-18-nodes-fraction-100.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.8670681 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+168.05user 0.20system 0:16.78elapsed 1002%CPU (0avgtext+0avgdata 7376maxresident)k
+0inputs+8outputs (0major+514minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 4 pal 32'
+graphs/06-18-nodes-fraction-100.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.9118020 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+157.60user 0.13system 0:16.81elapsed 938%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/06-18-nodes-fraction-100.graph run 5 pal 32'
+graphs/06-18-nodes-fraction-100.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/06-18-nodes-fraction-100.graph
+Execution took 16.9005843 seconds
+The shortest path has length 210 with the path 0->13->4->6->2->10->8->9->12->11->15->7->14->5->17->16->3->1->0
+157.28user 0.02system 0:16.80elapsed 936%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for file in 06-18-nodes-fraction-100.graph 07-18-nodes-fraction-100.graph 08-18-nodes-fraction-90.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 seq'
+graphs/07-18-nodes-fraction-100.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/07-18-nodes-fraction-100.graph
+Execution took 40.9918495 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+40.98user 0.00system 0:40.99elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 seq'
+graphs/07-18-nodes-fraction-100.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/07-18-nodes-fraction-100.graph
+Execution took 41.0332660 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+41.03user 0.00system 0:41.03elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 seq'
+graphs/07-18-nodes-fraction-100.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/07-18-nodes-fraction-100.graph
+Execution took 41.0331901 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+41.03user 0.00system 0:41.03elapsed 99%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+8outputs (0major+239minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 seq'
+graphs/07-18-nodes-fraction-100.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/07-18-nodes-fraction-100.graph
+Execution took 40.9405845 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+40.94user 0.00system 0:40.94elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 seq'
+graphs/07-18-nodes-fraction-100.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/07-18-nodes-fraction-100.graph
+Execution took 40.9805581 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+40.98user 0.00system 0:40.98elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 1'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/07-18-nodes-fraction-100.graph
+Execution took 22.5359376 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+22.52user 0.01system 0:22.53elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 1'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/07-18-nodes-fraction-100.graph
+Execution took 22.5986275 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+22.60user 0.00system 0:22.60elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+242minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 1'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/07-18-nodes-fraction-100.graph
+Execution took 22.5931021 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+22.59user 0.00system 0:22.59elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 1'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/07-18-nodes-fraction-100.graph
+Execution took 22.5868634 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+22.58user 0.00system 0:22.59elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 1'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/07-18-nodes-fraction-100.graph
+Execution took 23.0589046 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+23.06user 0.00system 0:23.06elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 2'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/07-18-nodes-fraction-100.graph
+Execution took 15.3651735 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+30.43user 0.02system 0:15.37elapsed 198%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 2'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/07-18-nodes-fraction-100.graph
+Execution took 15.3468074 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+30.41user 0.02system 0:15.35elapsed 198%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 2'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/07-18-nodes-fraction-100.graph
+Execution took 15.3555957 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+30.47user 0.00system 0:15.35elapsed 198%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 2'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/07-18-nodes-fraction-100.graph
+Execution took 15.3405652 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+30.41user 0.00system 0:15.34elapsed 198%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+16outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 2'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/07-18-nodes-fraction-100.graph
+Execution took 15.3392076 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+30.40user 0.00system 0:15.34elapsed 198%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 4'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2306696 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+33.65user 0.00system 0:09.23elapsed 364%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 4'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2820729 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+33.68user 0.00system 0:09.28elapsed 362%CPU (0avgtext+0avgdata 3520maxresident)k
+0inputs+8outputs (0major+273minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 4'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2386186 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+33.63user 0.00system 0:09.23elapsed 364%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+273minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 4'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2240783 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+33.60user 0.00system 0:09.22elapsed 364%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 4'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2341038 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+33.65user 0.00system 0:09.23elapsed 364%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 8'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.4608395 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+50.17user 0.01system 0:09.45elapsed 530%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 8'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.5362609 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+47.98user 0.01system 0:09.53elapsed 503%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 8'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2413761 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+47.49user 0.01system 0:09.23elapsed 514%CPU (0avgtext+0avgdata 4064maxresident)k
+0inputs+8outputs (0major+308minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 8'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2051472 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+48.98user 0.04system 0:09.20elapsed 532%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+307minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 8'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/07-18-nodes-fraction-100.graph
+Execution took 9.2593031 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+49.53user 0.00system 0:09.25elapsed 535%CPU (0avgtext+0avgdata 4064maxresident)k
+0inputs+8outputs (0major+308minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 16'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/07-18-nodes-fraction-100.graph
+Execution took 6.0190977 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+71.40user 0.01system 0:06.00elapsed 1190%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 16'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/07-18-nodes-fraction-100.graph
+Execution took 11.3270221 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+90.18user 0.08system 0:11.31elapsed 797%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 16'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/07-18-nodes-fraction-100.graph
+Execution took 7.8097711 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+75.73user 0.01system 0:07.78elapsed 972%CPU (0avgtext+0avgdata 5168maxresident)k
+0inputs+8outputs (0major+376minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 16'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/07-18-nodes-fraction-100.graph
+Execution took 6.0149194 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+70.42user 0.00system 0:05.99elapsed 1174%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 16'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/07-18-nodes-fraction-100.graph
+Execution took 7.9599803 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+72.92user 0.06system 0:07.94elapsed 918%CPU (0avgtext+0avgdata 5184maxresident)k
+0inputs+8outputs (0major+378minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 1 pal 32'
+graphs/07-18-nodes-fraction-100.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/07-18-nodes-fraction-100.graph
+Execution took 6.3083305 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+94.53user 0.10system 0:06.22elapsed 1520%CPU (0avgtext+0avgdata 7344maxresident)k
+0inputs+8outputs (0major+512minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 2 pal 32'
+graphs/07-18-nodes-fraction-100.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/07-18-nodes-fraction-100.graph
+Execution took 4.7236242 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+96.17user 0.15system 0:04.65elapsed 2070%CPU (0avgtext+0avgdata 7344maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 3 pal 32'
+graphs/07-18-nodes-fraction-100.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/07-18-nodes-fraction-100.graph
+Execution took 6.2088888 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+90.45user 0.04system 0:06.13elapsed 1475%CPU (0avgtext+0avgdata 7344maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 4 pal 32'
+graphs/07-18-nodes-fraction-100.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/07-18-nodes-fraction-100.graph
+Execution took 6.2142471 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+99.98user 0.02system 0:06.11elapsed 1634%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+514minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/07-18-nodes-fraction-100.graph run 5 pal 32'
+graphs/07-18-nodes-fraction-100.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/07-18-nodes-fraction-100.graph
+Execution took 5.8754011 seconds
+The shortest path has length 232 with the path 0->3->16->11->7->6->12->15->5->8->10->13->4->9->14->2->1->17->0
+95.20user 0.08system 0:05.78elapsed 1648%CPU (0avgtext+0avgdata 7328maxresident)k
+0inputs+8outputs (0major+511minor)pagefaults 0swaps
++ for file in 06-18-nodes-fraction-100.graph 07-18-nodes-fraction-100.graph 08-18-nodes-fraction-90.graph
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 seq'
+graphs/08-18-nodes-fraction-90.graph run 1 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/08-18-nodes-fraction-90.graph
+Execution took 31.3719376 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+31.37user 0.00system 0:31.37elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 seq'
+graphs/08-18-nodes-fraction-90.graph run 2 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/08-18-nodes-fraction-90.graph
+Execution took 31.2846259 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+31.28user 0.00system 0:31.28elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 seq'
+graphs/08-18-nodes-fraction-90.graph run 3 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/08-18-nodes-fraction-90.graph
+Execution took 31.4896794 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+31.48user 0.00system 0:31.49elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 seq'
+graphs/08-18-nodes-fraction-90.graph run 4 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/08-18-nodes-fraction-90.graph
+Execution took 31.2689344 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+31.26user 0.00system 0:31.27elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 seq'
+graphs/08-18-nodes-fraction-90.graph run 5 seq
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./sequential graphs/08-18-nodes-fraction-90.graph
+Execution took 31.3726162 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+31.36user 0.00system 0:31.37elapsed 99%CPU (0avgtext+0avgdata 2992maxresident)k
+0inputs+8outputs (0major+240minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 1'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/08-18-nodes-fraction-90.graph
+Execution took 40.5509406 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+40.55user 0.00system 0:40.55elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 1'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/08-18-nodes-fraction-90.graph
+Execution took 40.4689771 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+40.46user 0.00system 0:40.47elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 1'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/08-18-nodes-fraction-90.graph
+Execution took 40.5819431 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+40.57user 0.01system 0:40.58elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 1'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/08-18-nodes-fraction-90.graph
+Execution took 40.4868670 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+40.49user 0.00system 0:40.49elapsed 100%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 1'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 1
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 1 graphs/08-18-nodes-fraction-90.graph
+Execution took 40.6017574 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+40.59user 0.00system 0:40.60elapsed 99%CPU (0avgtext+0avgdata 3008maxresident)k
+0inputs+8outputs (0major+241minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 2'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/08-18-nodes-fraction-90.graph
+Execution took 23.6480889 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+47.26user 0.02system 0:23.66elapsed 199%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+8outputs (0major+255minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 2'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/08-18-nodes-fraction-90.graph
+Execution took 23.5466312 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+47.05user 0.00system 0:23.54elapsed 199%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 2'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/08-18-nodes-fraction-90.graph
+Execution took 23.5669585 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+47.09user 0.00system 0:23.56elapsed 199%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+8outputs (0major+254minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 2'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/08-18-nodes-fraction-90.graph
+Execution took 23.5662036 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+47.08user 0.00system 0:23.56elapsed 199%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+8outputs (0major+255minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 2'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 2
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 2 graphs/08-18-nodes-fraction-90.graph
+Execution took 23.5585748 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+47.07user 0.00system 0:23.56elapsed 199%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+8outputs (0major+253minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 4'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/08-18-nodes-fraction-90.graph
+Execution took 17.6124913 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+64.73user 0.02system 0:17.61elapsed 367%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 4'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/08-18-nodes-fraction-90.graph
+Execution took 17.9822998 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+65.08user 0.01system 0:17.98elapsed 361%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 4'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/08-18-nodes-fraction-90.graph
+Execution took 17.5773871 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+64.58user 0.00system 0:17.57elapsed 367%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 4'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/08-18-nodes-fraction-90.graph
+Execution took 17.2048274 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+67.76user 0.00system 0:17.20elapsed 393%CPU (0avgtext+0avgdata 3488maxresident)k
+0inputs+8outputs (0major+271minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 4'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 4
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 4 graphs/08-18-nodes-fraction-90.graph
+Execution took 15.7670139 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+62.90user 0.03system 0:15.76elapsed 399%CPU (0avgtext+0avgdata 3504maxresident)k
+0inputs+8outputs (0major+272minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 8'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.9050090 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+52.45user 0.02system 0:08.90elapsed 589%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 8'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8984648 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+53.21user 0.00system 0:08.89elapsed 598%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 8'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8719807 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+53.01user 0.00system 0:08.87elapsed 597%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 8'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.9029558 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+52.62user 0.00system 0:08.90elapsed 591%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+307minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 8'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 8
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 8 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8486407 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+53.05user 0.01system 0:08.84elapsed 600%CPU (0avgtext+0avgdata 4048maxresident)k
+0inputs+8outputs (0major+306minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 16'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.9172742 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+71.53user 0.06system 0:08.90elapsed 803%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 16'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/08-18-nodes-fraction-90.graph
+Execution took 11.0812645 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+75.51user 0.00system 0:11.06elapsed 682%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+8outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 16'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/08-18-nodes-fraction-90.graph
+Execution took 9.1386099 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+75.73user 0.01system 0:09.11elapsed 831%CPU (0avgtext+0avgdata 5152maxresident)k
+0inputs+16outputs (0major+375minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 16'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8748529 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+70.15user 0.01system 0:08.86elapsed 791%CPU (0avgtext+0avgdata 5168maxresident)k
+0inputs+8outputs (0major+376minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 16'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 16
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 16 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8657946 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+71.20user 0.01system 0:08.84elapsed 804%CPU (0avgtext+0avgdata 5200maxresident)k
+0inputs+8outputs (0major+378minor)pagefaults 0swaps
++ for p in 1 2 4 8 16 32
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 1 pal 32'
+graphs/08-18-nodes-fraction-90.graph run 1 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8592433 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+86.85user 0.10system 0:08.76elapsed 992%CPU (0avgtext+0avgdata 7344maxresident)k
+0inputs+8outputs (0major+512minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 2 pal 32'
+graphs/08-18-nodes-fraction-90.graph run 2 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/08-18-nodes-fraction-90.graph
+Execution took 9.5933305 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+88.32user 0.02system 0:09.48elapsed 931%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 3 pal 32'
+graphs/08-18-nodes-fraction-90.graph run 3 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/08-18-nodes-fraction-90.graph
+Execution took 9.2881631 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+92.22user 0.05system 0:09.19elapsed 1003%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 4 pal 32'
+graphs/08-18-nodes-fraction-90.graph run 4 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/08-18-nodes-fraction-90.graph
+Execution took 9.0950764 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+80.90user 0.14system 0:09.03elapsed 897%CPU (0avgtext+0avgdata 7344maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
++ for i in 1 2 3 4 5
++ echo 'graphs/08-18-nodes-fraction-90.graph run 5 pal 32'
+graphs/08-18-nodes-fraction-90.graph run 5 pal 32
++ GOMP_CPU_AFFINITY=576-1023:2
++ time ./parallel 32 graphs/08-18-nodes-fraction-90.graph
+Execution took 8.8329844 seconds
+The shortest path has length 209 with the path 0->7->14->15->4->9->3->12->5->8->13->1->10->17->2->16->11->6->0
+80.21user 0.03system 0:08.76elapsed 915%CPU (0avgtext+0avgdata 7360maxresident)k
+0inputs+8outputs (0major+513minor)pagefaults 0swaps
